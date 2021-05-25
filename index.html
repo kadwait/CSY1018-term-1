@@ -4,6 +4,8 @@
 	<meta  name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home Page</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" href="index.js"></script>	
+
 </head>
 <body>  
 		<div class="container">
@@ -11,10 +13,10 @@
 					<img src="logo.jpg" class="logo">
 					<nav>
 						<ul id="menuList">
-						<li><a href="#">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Contact</a></li>	
-						<li><a href="#">CV</a></li>
+						<li><a href="contact.html">Contact</a></li>	
+						<li><a href="cv.html">CV</a></li>
 						<li><a href="#">MY report</a></li>
 					</ul>
 					</nav>
@@ -35,32 +37,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="social-links">
-				<h4>CONTACT ME</h4>
-				<img src="facebook.svg">
-				<img src="mail.svg">
-				<img src="snapchat.svg">
-				<img src="instagram.svg">
-			</div>
 		</div>
-	<script type="text/javascript">
-		
-	var menuList = document.getElementById("menuList");
+			<div class="footer">
+				<div class="social-links">
+					<h4>CONTACT ME</h4>
+					<img src="facebook.svg">
+					<img src="snapchat.svg">
+					<img src="instagram.svg">
+				</div>
+			</div>
 				
-				menuList.style.maxheight="0px"
-				
-				function togglemenu()
-				{
-					if(menuList.style.maxheight=="0px")
-				{
-					menuList.style.maxheight="130px";
-				}
-					else
-				{
-					menuList.style.maxheight="0px";
-
-				}
-	</script>	
 				
 
 </body>

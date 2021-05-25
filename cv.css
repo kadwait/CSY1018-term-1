@@ -1,0 +1,12 @@
+.social-links {
+	padding: 20px;
+	height: 100%;
+	background-color: grey;
+	text-align: center;
+}
+
+.social-links img{
+	height: 20px;
+	margin: 40px;
+	cursor: pointer;
+}

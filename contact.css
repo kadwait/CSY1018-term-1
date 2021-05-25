@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.form-start
+{
+	position: relative;
+	width: 100%;
+	max-width: 1100px;
+	margin:20px;
+	height: 500px;
+	background: green;
+	display: flex;
+	justify-content: space-between;
+	align-items: left;
+}
+
+.form-start, .formbox
+{
+	width: 50%;
+	display: flex;
+	justify-content: left;
+	align-items: left;
+}
+
+.form-start, .formbox form
+{
+	position: relative;
+	width: 100%;
+	padding: 0 0 0 100px;
+}
+
+.form-start, .formbox form h2
+{
+	color: white;
+	font-weight: 500;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 40px;
+}
+
+.form-start .formbox form .inputbox
+{
+position: relative;
+margin-bottom: 40px;
+}
+
+.form-start .formbox form .inputbox:last-child
+{
+	margin-bottom: 0px;
+}
+
+.form-start, .formbox form .inputbox input,
+.form-start, .formbox form .inputbox textarea{
+	position: relative;
+	background: transparent;
+	outline: none;
+	border:none;
+	width: 100%;
+	color:white;
+	padding-bottom: 10px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	border-bottom: 3px solid rgba(255,255,255,0.5);
+	resize: none;
+}
+
+.form-start .formbox form .inputbox textarea
+{
+	height: 100px;
+}
+	
+
+	.form-start .formbox form .inputbox input[type="submit"]
+{
+	background: white;
+	padding:8px 20px;
+	margin-top: -10px;
+	width: 100px;
+	cursor: pointer;
+	background: grey;
+	color: white;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	border:none;	
+}
+
+	.form-start .formbox form .inputbox input[type="submit"]:focus
+	{
+		background: red;
+		color: brown;
+	}
+
+	.form-start .formbox form .inputbox span
+	{
+		position: absolute;
+		left: 0;
+		font-size: 16px;
+		font-weight: 300;
+		display: inline-block;
+		pointer-events: none;
+		letter-spacing: 1px;
+		color: rgb(255,255,255,0.5);
+		transition: all 1s;
+	}
+
+	.form-start .formbox form .inputbox input:focus ~ span,
+	.form-start .formbox form .inputbox textarea:focus ~ span,
+	.form-start.formbox form .inputbox input:valid ~ span,
+	.form-start.formbox form .inputbox textarea:valid ~ span
+	{
+		transform: translateY(-24px);
+		color: white;
+	}
+
+.form-start .formbox form .inputbox input:focus,
+	.form-start.formbox form .inputbox textarea:focus, 
+	.form-start.formbox form .inputbox input:valid,
+	.form-start.formbox form .inputbox textarea:valid
+	{
+		border-bottom-color: white;
+	} 
+
+.social-links {	
+	align-items: center;
+	width: 100%;
+	padding: 20px;
+	height: 100%;
+	background-color: grey;
+	text-align: center;
+}
+
+.social-links h4{
+	text-align: center;
+	font-family: Bookman, serif;
+}
+
+.social-links img{
+	height: 20px;
+	margin: 40px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width:500px){
+ .form-start{
+ 	max-width: 100%;
+ }
+
+ .form-start .formbox {
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+ .form-start .formbox form{
+ 	margin-bottom: 15px;
+ 	width:100%;
+ }
+
