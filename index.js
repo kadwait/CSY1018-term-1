@@ -1,18 +1,18 @@
-<script type="text/javascript">
-		
-	var menuList = document.getElementById("menuList");
-				
-				menuList.style.maxheight="0px"
-				
-				function togglemenu()
-				{
-					if(menuList.style.maxheight=="0px")
-				{
-					menuList.style.maxheight="130px";
-				}
-					else
-				{
-					menuList.style.maxheight="0px";
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
 
-				}
-	</script>	s
+
+
+
+openMenu.addEventListener('click,show');
+closeMenu.addEventListener('click,close');
+
+function show(){
+	mainMenu.style.display='flex';
+	mainMenu.style.top ='0';
+}
+
+function close (){
+	mainMenu.style.top ='-100%';
+}

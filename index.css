@@ -1,25 +1,64 @@
 *{
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
-}
-
-.container{
-	background-image: url(6.jpg);
-	background-size: cover;
-	background-position:center center;
-	width: 100%;
-	min-height: 100vh;
- 	padding-left: 8%;
-	padding-right: 8%;
-	overflow: hidden;
 	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
 }
 
-.nav-bar{
+body{
 	width: 100%;
+	font-family: 'Arial',sans-seriff;
+}
+
+nav{
+	width: 100%;
+	background: grey;
+	color: black;
 	display: flex;
+	background-position: border-box;
+	box-sizing: border-box;
+	justify-content: space-between;
 	align-items: center;
+}
+
+nav .mainMenu{
+	display: flex;
+	list-style: none;
+}
+
+nav .mainMenu li a{
+	font-family: cursive;
+	display: inline-block;
+	padding: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 1000;
+	color: black;
+	font-size: 19px;
+
+}
+
+nav .mainMenu li a:hover{
+	background:white;
+}
+
+nav .openMenu{
+	font-size: 2rem;
+	margin: 20px;
+	display: none;
+	cursor: pointer;
+}
+
+nav .mainMenu .closeMenu{
+	font-size: 2rem;
+	display: none;
+	cursor: pointer;
+
+}
+
+nav .logo{
+	margin: 10px;
+	font-size: 30px;
+	cursor: pointer;
 }
 
 .logo{
@@ -30,40 +69,18 @@
 	position: relative;
 }
 
-.logo img{
-	width: 10px;
-	cursor: pointer;
-	margin: 0px 0px;
-}
-	
-.menu-icon{
-	width: 25px;
-	cursor: pointer;
-	display: none;
-}
 
-nav{
-	flex: 2;
-	text-align: right;
-}
 
-nav ul li{
-	list-style: none;
-	display: inline-block;
-	margin-right: 30px;
-	text-transform: uppercase;
-}
-
-nav ul li a{
-	text-decoration: none;
-	transition: .3s;
-	color: black;
-	font-size: 14px;
-	font-weight: 1000;
-}
-
-nav ul li a:hover{
-	color: #8F2323;
+.container{
+	background-image: url(6.jpg);
+	background-size: cover;
+	background-position:center;
+	width: 100%;
+	min-height: 100vh;
+ 	padding-left: 10%;
+	padding-right: 10%;
+	overflow: hidden;
+	box-sizing: border-box;
 }
 
 .row{
@@ -139,7 +156,7 @@ button:hover{
 	justify-content: space-between;
 }
 
-.col-1::after {
+.col-1:after {
 	content: '';
 	width: 15px;
 	height: 100%;
@@ -175,12 +192,21 @@ button:hover{
 	transform: translateX(150px);
 }
 
+.footer{
+	width: 100%;
+	background-color: grey;
+}
 
-.social-links {
+.social-links {	
 	padding: 20px;
 	height: 100%;
 	background-color: grey;
 	text-align: center;
+}
+
+.social-links h4{
+	text-align: center;
+	font-family: Bookman, serif;
 }
 
 .social-links img{
@@ -189,33 +215,40 @@ button:hover{
 	cursor: pointer;
 }
 
-@media only screen and (max-width:500px){
+@media(max-width:800px)
+{
 	
-	nav ul{
-		width: 100%;
-		background: linear-gradient(white,black,white);
-		position: absolute;
-		top: 75px;
-		right: 0;
-		z-index: 2;	
-	}
-	nav ul li {
-		display: block;
-		margin-top:10px;
-		margin-bottom: 10px;
-	}
+nav .mainMenu{
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: purple;
+	transition: top 1s ease;
+	display: none;
+}
 
-	nav ul li a {
-		color: #fff;
-	}
+nav .mainMenu .closeMenu{
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
 
-	.menu-icon{
-		display: block;
+nav .openMenu{
+	display: block;
+}
+
+	.container{
+		max-width: 100%;	
 	}
-	#menulist{
-		overflow: hidden;
-		transition: 0.5s;
-	}
+	
+	
 	.row{
 		flex-direction: column-reverse;
 		margin: 50px 0;
@@ -245,4 +278,21 @@ button:hover{
 	.col-1 h3{
 		flex-size: 15px;
 	}
+
+	.footer{
+	width: 100%;
+	flex: inline;
+	}
+	.social-links 
+	{
+		width: 100%;
+		background: grey;
+		position: relative;
+		flex-size:10px;
+	}	
+
+	.social-links h4{
+		flex: 15px;
+	}
+
 }

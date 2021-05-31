@@ -11,7 +11,7 @@
 	max-width: 1100px;
 	margin:20px;
 	height: 500px;
-	background: green;
+	background: black;
 	display: flex;
 	justify-content: space-between;
 	align-items: left;
@@ -34,7 +34,7 @@
 
 .form-start, .formbox form h2
 {
-	color: white;
+	color: black;
 	font-weight: 500;
 	font-size: 2em;
 	text-transform: uppercase;
@@ -93,7 +93,7 @@ margin-bottom: 40px;
 
 	.form-start .formbox form .inputbox input[type="submit"]:focus
 	{
-		background: red;
+		background: grey;
 		color: brown;
 	}
 
@@ -106,7 +106,7 @@ margin-bottom: 40px;
 		display: inline-block;
 		pointer-events: none;
 		letter-spacing: 1px;
-		color: rgb(255,255,255,0.5);
+		color: black;
 		transition: all 1s;
 	}
 
@@ -116,7 +116,7 @@ margin-bottom: 40px;
 	.form-start.formbox form .inputbox textarea:valid ~ span
 	{
 		transform: translateY(-24px);
-		color: white;
+		color: black;
 	}
 
 .form-start .formbox form .inputbox input:focus,
