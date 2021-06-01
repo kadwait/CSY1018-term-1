@@ -5,8 +5,8 @@ const openMenu = document.querySelector('.openMenu');
 
 
 
-openMenu.addEventListener('click,show');
-closeMenu.addEventListener('click,close');
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
 
 function show(){
 	mainMenu.style.display='flex';

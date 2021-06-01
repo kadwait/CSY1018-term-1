@@ -1,12 +1,12 @@
 *{
 	box-sizing: border-box;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 
 body{
 	width: 100%;
-	font-family: 'Arial',sans-seriff;
+	font-family: 'Arial',sans-serif;
 }
 
 nav{
@@ -14,7 +14,7 @@ nav{
 	background: grey;
 	color: black;
 	display: flex;
-	background-position: border-box;
+	background-position: center;
 	box-sizing: border-box;
 	justify-content: space-between;
 	align-items: center;
@@ -26,9 +26,9 @@ nav .mainMenu{
 }
 
 nav .mainMenu li a{
-	font-family: cursive;
 	display: inline-block;
 	padding: 15px;
+	font-family: cursive;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 1000;
@@ -37,13 +37,12 @@ nav .mainMenu li a{
 
 }
 
-nav .mainMenu li a:hover{
+nav .mainMenu li a:hover {
 	background:white;
 }
 
 nav .openMenu{
 	font-size: 2rem;
-	margin: 20px;
 	display: none;
 	cursor: pointer;
 }
@@ -215,6 +214,7 @@ button:hover{
 	cursor: pointer;
 }
 
+
 @media(max-width:800px)
 {
 	
@@ -228,7 +228,7 @@ nav .mainMenu{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: purple;
+	background: grey;
 	transition: top 1s ease;
 	display: none;
 }
@@ -242,6 +242,10 @@ nav .mainMenu .closeMenu{
 
 nav .openMenu{
 	display: block;
+}
+
+nav .openMenu:hover{
+	color: white;
 }
 
 	.container{
