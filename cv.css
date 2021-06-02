@@ -21,34 +21,37 @@
 		}
 
 	.info{
+		margin-top: 5px; 
+		border:2px lightblue solid;
 		flex-direction: column;
 		display: flex;
 		justify-content: space-around;
 		align-self: center;
+		background: grey;
 	}
 
 	
-
 .info a{
-	flex-direction: column;
-	margin-top: 5%;
+	text-align: center;
 	margin-top: 1.2em;
 	font-size: 1.2em;
 	width: 40em;
 	padding: 3em;
 	font-family: ;
-	background-color:grey;
-	box-shadow:2px 0px 15px 0px rgba(50,50,50,0.90);
-	border:2px white solid;
+
 }
 
 .info h2{
 	text-transform: uppercase;
-	font-family: Brush Script MT;
+	font-family: times new roman;
 	font-size: 1.5em;
 	font-weight: lighter;
-	margin-top: -0.2em;
+	margin-top: ;
 	color: black;
+}
+
+.info p{
+	font-family: times new roman;
 }
 
 
@@ -81,18 +84,24 @@
 	font-size: 1.1em;
 	background-color: grey;
 	font-family: ;
-	border:2px white solid;
+	border:2px lightblue solid;
 	margin-bottom: 5%;
 }
 
 .columns h3{
 	text-transform: uppercase;
-	font-family:Brush Script MT;
+	font-family:times new roman;
 	text-decoration: underline;
 	color: black;
 }
 
 .columns ul{
+	font-family: times new roman;
+	column-count: 3;
+	column-gap:50px;
+	column-rule-style: solid;
+	column-rule-width: 2px;
+	column-rule-color: lightblue;
 	float: left;
 	list-style: none;
 }
@@ -124,49 +133,51 @@
 	}
 
 	.info{
-		margin: 2px;
-		font-size: 25px;
+		display: flex;
+		margin: 20px;
 		width: auto;
-		height: auto;
+		height: 800px;
 	
 	}
 
 	
-	.info a{
-		font-size: 0.8em;
-		width:30em;
-		height: 25em;
+	.info a{	
 		padding:2em;
-		font-size: 0.7em;
+		font-size: 0.5em;
 		width: 20em;
 		margin:20em;
-		padding-bottom: 4em;
+		padding:0;
 	}
 
 	.info a h2{
-		font-size: 20px;
+		font-size: 25px;
 		margin-top: 0.1em;
 
 	}
 
-.columns{
-		flex-direction: row;
-		padding: 0px;
-		font-size: 1.3em;
-		width: 2em;
-		margin-top:0px;
+	.info a p{
 		font-size: 20px;
-		width: 15em;
+	}
+
+.columns{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column-reverse;
+		padding: 0px;
+		width: 375px;
+		margin-top:0px;
 		margin-top: 15%;
 	}
 
 .columns ul{
+	font-size: 15px;
 	flex-direction: row;
 	padding: 2px;
 
 }
 
 .columns ul li{
+
 flex-direction: row;
 padding: 1px;
 

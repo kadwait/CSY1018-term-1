@@ -24,8 +24,7 @@
 	padding:20px;
 	font-size: 1.1em;
 	background-color: grey;
-	font-family: ;
-	border:2px white solid;
+	border:2px lightblue solid;
 	margin-bottom: 5%;
 }
 
@@ -35,7 +34,7 @@
 	width: auto;
 	text-align: center;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 
 }
 
@@ -54,12 +53,13 @@
 .work .place h3{
 	font-family: cursive;
 	text-transform: uppercase;
-	color: blue;
+	color: black;
 	font-size: 20px;
 	margin-top: 50px;
 }
 
 .work .place p.thing{
+	text-align: center;
 	color: purple;
 	margin: 12px 0;
 	font-size: 12px;
@@ -71,3 +71,11 @@
 	border-radius:40px 40px 40px 40px;
 }
 
+.work .place p.information{
+	font-family:cursive;
+	column-count: 2;
+	column-gap:20px;
+	column-rule-style: solid;
+	column-rule-width: 2px;
+	column-rule-color: lightblue;
+}
