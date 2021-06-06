@@ -50,6 +50,7 @@ nav .openMenu{
 }
 
 nav .mainMenu .closeMenu{
+	justify-content: right;
 	font-size: 2rem;
 	display: none;
 	cursor: pointer;

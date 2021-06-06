@@ -42,8 +42,8 @@
 	background:#bbbbbb;
 	margin: 5px;
 	margin-bottom: 50px;
-	width: 300px;
-	height: 500px;
+	width: 400px;
+	height: 600px;
 	padding: 20px;
 	line-height: 25px;
 	color: green;
@@ -74,8 +74,9 @@
 .work .place p.information{
 	font-family:cursive;
 	column-count: 2;
-	column-gap:20px;
+	column-gap:25px;
 	column-rule-style: solid;
 	column-rule-width: 2px;
 	column-rule-color: lightblue;
+	column-rule-height: 20px;
 }
