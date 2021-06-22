@@ -23,11 +23,14 @@ nav{
 }
 
 nav .mainMenu{
+	list-style-type: none;
+	list-style-type: none;
+
 	display: flex;
 	list-style: none;
 }
 
-nav .mainMenu li a{
+nav .mainMenu a{
 	display: inline-block;
 	padding: 15px;
 	font-family: cursive;
@@ -39,7 +42,7 @@ nav .mainMenu li a{
 
 }
 
-nav .mainMenu li a:hover {
+nav .mainMenu a:hover {
 	background:white;
 }
 
@@ -49,7 +52,12 @@ nav .openMenu{
 	cursor: pointer;
 }
 
+nav .closeMenu{
+	display: none;
+}
+
 nav .mainMenu .closeMenu{
+	list-style-type: none;
 	justify-content: right;
 	font-size: 2rem;
 	display: none;
@@ -59,7 +67,6 @@ nav .mainMenu .closeMenu{
 
 nav .logo{
 	margin: 10px;
-	font-size: 30px;
 	cursor: pointer;
 }
 
@@ -74,7 +81,7 @@ nav .logo{
 
 
 .container{
-	background-image: url(6.jpg);
+	background-image: url(photos/6.jpg);
 	background-size: cover;
 	background-position:center;
 	width: 100%;
@@ -127,7 +134,7 @@ a{
 
 }
 
-button{
+.button{
 	font-family:Bookman, serif;
 	width: 100px;
 	border: 0;
@@ -142,16 +149,16 @@ button{
 }
 
 
-button img{
+.button img{
 	width: 20px;
 	display: none;
 }
 
-button:hover img {
+.button:hover img {
 	display: block;
 }
 
-button:hover{
+.button:hover{
 	width: 160px;
 	display: flex;
 	align-items: center;
