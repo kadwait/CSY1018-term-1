@@ -4,6 +4,14 @@
 	font-family: sans-serif;
 }
 
+.form-body{
+	background-image: url(photos/6.jpg);
+	background-size: cover;
+	background-position:center; 
+	width: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
 .form-start
 {
 	position: relative;
@@ -147,12 +155,16 @@ margin-bottom: 40px;
 	cursor: pointer;
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:800px){
+ 
  .form-start{
- 	max-width: 100%;
+ 	padding: 0px;
+ 	justify-content:left;
+ 	position: relative;
  }
 
  .form-start .formbox {
+
 	margin-bottom: 15px;
 	width: 100%;
 }

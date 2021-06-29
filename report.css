@@ -40,9 +40,10 @@ padding: 2px;
 }
 
 .content1 p{
-	justify-items: left;
-	font-family: ;
+	text-align: left;
+	font-family:"times new roman",times,serif ;
 	padding:15px ;
+	font-size: 14px;
 }
 
 .content1 h3{
