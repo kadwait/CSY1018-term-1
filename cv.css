@@ -1,4 +1,5 @@
 .cv-material{
+	width: 100%;
 	display: flex;
 	color:black;
 	min-height: 100%;
@@ -21,18 +22,17 @@
 		}
 
 	.info{
+		width: 100%;
 		margin-top: 5px; 
+		padding: 20px;
 		border:2px lightblue solid;
-		flex-direction: column;
-		display: flex;
 		justify-content: space-around;
-		align-self: center;
 		background: grey;
 	}
 
 	
 .info a{
-	text-align: center;
+	text-align: left;
 	margin-top: 1.2em;
 	font-size: 1.2em;
 	width: 40em;
@@ -44,7 +44,7 @@
 .info h2{
 	text-transform: uppercase;
 	font-family: times new roman;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: lighter;
 	margin-top: ;
 	color: black;
@@ -52,6 +52,7 @@
 
 .info p{
 	font-family: times new roman;
+	text-align: left;
 }
 
 
@@ -65,7 +66,6 @@
 .profile-picture img{
 	width: 15em;
 	height: 15em;
-	border-radius: 15em;
 	margin-top: 1%;
 	box-shadow: 2px 0px 15px 1px rgba(50,50,50,0.87);
 }
