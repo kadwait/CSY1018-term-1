@@ -1,24 +1,18 @@
-.cv-material{
-	width: 100%;
-	display: flex;
-	color:black;
-	min-height: 100%;
-	flex-direction: column;
-	}
-
+/*main body*/
 .cv-material h1{
 		text-transform: uppercase;
-		color: black;
+		color: white;
 		justify-content: center;
 		align-items: center;
 		display: flex;
-		padding-top: 2em;
-		padding-bottom: 2em;
+		padding: 2px;
 		margin-top: 3em;
 		font-family:Zapf Chancery, cursive; 
-		font-size:1.7em;
+		font-size:45px;
 		background-color: grey;
-		box-shadow: 2px 0px 15px 0px rgba(50,50,50,0.87);
+		box-shadow: 2px 0px 1px 3px rgba(50,50,50,0.87);
+		-webkit-text-stroke: 0.3vw black;
+
 		}
 
 	.info{
@@ -56,7 +50,7 @@
 }
 
 
-
+/*Profle picture*/
 .profile-picture {
 	display: flex;
 	justify-content: center;
@@ -106,6 +100,7 @@
 	list-style: none;
 }
 
+/*Responsive page*/
 @media(max-width:800px){
 
 
@@ -133,18 +128,16 @@
 	}
 
 	.info{
-		display: flex;
-		margin: 20px;
-		width: auto;
-		height: 800px;
+		margin: 10px;
+		width: 100%;
+		height: auto;
 	
 	}
 
 	
 	.info a{	
-		padding:2em;
 		font-size: 0.5em;
-		width: 20em;
+		width: 320px;
 		margin:20em;
 		padding:0;
 	}
@@ -160,19 +153,17 @@
 	}
 
 .columns{
-		display: flex;
-		justify-content: space-between;
 		flex-direction: column-reverse;
-		padding: 0px;
-		width: 375px;
-		margin-top:0px;
-		margin-top: 15%;
+		width: 110%;
+		height: 250px;
+		padding: 0.5px;
+		margin: 5px;
 	}
 
 .columns ul{
-	font-size: 15px;
+	font-size: 17px;
 	flex-direction: row;
-	padding: 2px;
+	padding: 15px;
 
 }
 

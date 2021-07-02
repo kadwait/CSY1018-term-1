@@ -1,17 +1,21 @@
+/*Main body layout*/
+
+
 .report-container{
 	display: grid;
-	height: 800vh;
-	grid-template-columns: 0.2fr 1fr;
+	height: auto;
+	grid-template-columns: 0.2fr 10fr;
 	grid-template-rows: 0.2gr 1.5fr;
 	grid-template-areas:"sidebar content1";
 	grid-gap: 0.2rem;
 	font-weight: 800;
-	text-transform: uppercase;
 	font-size: 12px;
 	color: black;
 	text-align: center;
 	margin: 2px;
 }
+
+/*Sidebar*/
 
 .sidebar{
 background: grey;
@@ -20,9 +24,21 @@ border-radius: 20px;
 padding-top:20px;
 }
 
-.sidebar h3:hover{
+h1:hover{
 	color: white;
 }
+
+.sidebar li{
+text-align: left;
+font-family: "times new roman",times,serif ;
+font-size: 14px;
+list-style-type: none;
+padding: 20px;
+
+
+}
+
+/*main report content layout*/
 
 .content1{
 background: grey;
@@ -31,6 +47,12 @@ border-radius: 20px;
 padding-top:20px;
 }
 
+.content1 h1{
+	font-size: 32px;
+	-webkit-text-stroke: 0.08vw white;
+
+
+}
 .content1 h2{
 padding: 2px;
 }
@@ -39,6 +61,7 @@ padding: 2px;
 	color: white;
 }
 
+/*main written contents of page*/
 .content1 p{
 	text-align: left;
 	font-family:"times new roman",times,serif ;
@@ -56,16 +79,35 @@ padding: 2px;
 		border-radius: 20px 20px 20px 20px;	
 }
 
+.reference{
+	padding: 12px;
+	text-align: left;
+}
+
+.reference h3{
+font-size: 24px;	
+}
+
+.reference li{
+	padding: 12px;
+}
+/*resonsive page*/
 
 
-@media(max-width:500px){
-{
+@media(max-width:800px){
+
 .report-container
 {
-	grid-template-columns: 1fr;
-	grid-template-rows: 0.4fr 1.2fr ;
-	grid-template-areas: "sidebar" "content1";
+	height: auto;
+	grid-gap: 0.2rem;
+	font-weight: 600;
+	font-size: 9px;
+	color: black;
+	text-align: center;
+	width: 100%;
+
 }
+
 }
 
 

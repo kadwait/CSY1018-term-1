@@ -1,3 +1,4 @@
+/*main body layout*/
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -10,7 +11,7 @@ body{
 	font-family: 'Arial',sans-serif;
 }
 
-
+/*navigation bar*/
 nav{
 	width: 100%;
 	background: grey;
@@ -64,7 +65,7 @@ nav .mainMenu .closeMenu{
 	cursor: pointer;
 
 }
-
+/*nagivation bar logo*/
 nav .logo{
 	margin: 10px;
 	cursor: pointer;
@@ -79,7 +80,7 @@ nav .logo{
 }
 
 
-
+/*main body contents*/
 .container{
 	background-image: url(photos/6.jpg);
 	background-size: cover;
@@ -106,10 +107,13 @@ nav .logo{
 }
 
 .col-1 h2{
+
 font-size: 45px;
 font-family: Zapf Chancery, cursive;
 text-transform: uppercase;
 color:white;
+-webkit-text-stroke: 0.3vw black;
+
 }
 
 .col-1 h3{
@@ -133,7 +137,7 @@ a{
 	transition: .3s;
 
 }
-
+/*button*/
 .button{
 	font-family:Bookman, serif;
 	width: 100px;
@@ -145,6 +149,7 @@ a{
 	cursor: pointer;
 	border-radius:40px 40px 40px 40px;
 	transition:1s;
+
 
 }
 
@@ -189,6 +194,7 @@ a{
 	border-radius:40px 40px 40px 40px;
 }
 
+/*color box*/
 .color-box{
 	position: absolute;
 	right: 0;
@@ -201,11 +207,13 @@ a{
 	transform: translateX(150px);
 }
 
+/*Footer*/
 .footer{
 	width: 100%;
 	background-color: grey;
 }
 
+/*hyperlinked icons*/
 .social-links {	
 	padding: 20px;
 	height: 100%;
@@ -224,7 +232,7 @@ a{
 	cursor: pointer;
 }
 
-
+/*Responsive Page*/
 @media(max-width:800px)
 {
 	
@@ -291,6 +299,11 @@ nav .openMenu:hover{
 
 	.col-1 h3{
 		flex-size: 15px;
+		color: black;
+	}
+
+	.col-1 p{
+		color: black;
 	}
 
 	.footer{
@@ -308,5 +321,30 @@ nav .openMenu:hover{
 	.social-links h4{
 		flex: 15px;
 	}
+
+.button{
+	font-family:Bookman, serif;
+	width: 100px;
+	border: 0;
+	padding: 12px;
+	color: white;
+	background: silver;
+	border-radius:5px;
+	cursor: pointer;
+	border-radius:40px 40px 40px 40px;
+	transition:4s;
+
+
+}
+
+
+.button img{
+	width: 20px;
+	display: none;
+}
+
+.button:hover img {
+	display: block;
+}
 
 }

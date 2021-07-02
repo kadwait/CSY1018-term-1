@@ -1,9 +1,10 @@
+/*main body*/
 *{
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
 }
-
+/* form main body*/
 .form-body{
 	background-image: url(photos/6.jpg);
 	background-size: cover;
@@ -44,11 +45,17 @@
 {
 	color: black;
 	font-weight: 500;
-	font-size: 2em;
+	font-size: 45px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-bottom: 40px;
+	
 }
+
+.form-start, .formbox form h2:hover{
+	color: white;
+}
+
 
 .form-start .formbox form .inputbox
 {
@@ -114,7 +121,7 @@ margin-bottom: 40px;
 		display: inline-block;
 		pointer-events: none;
 		letter-spacing: 1px;
-		color: black;
+		color: white;
 		transition: all 1s;
 	}
 
@@ -135,6 +142,7 @@ margin-bottom: 40px;
 		border-bottom-color: white;
 	} 
 
+/*hyper linked icons*/
 .social-links {	
 	align-items: center;
 	width: 100%;
@@ -155,6 +163,7 @@ margin-bottom: 40px;
 	cursor: pointer;
 }
 
+/*Responsive page*/
 @media only screen and (max-width:800px){
  
  .form-start{

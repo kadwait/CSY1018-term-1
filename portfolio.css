@@ -1,16 +1,21 @@
+/*main body*/
 .wrapper{
-	margin-top:50px; 
+	margin-top:30px; 
 }
-
+/*main heading */
 .wrapper h1{
-
+	text-transform: uppercase;
 	font-family: cursive;
 	font-size: 52px;
 	margin-bottom:60px;
 	text-align: center; 
-
+	height: 0%;
+	width: 20;
+	color: green;
+	-webkit-text-stroke: 0.3vw black;
 }
 
+/*Main content*/
 .column{
 	box-shadow:2px 0px 15px 0px rgba(50,50,50,0.87);
 	display: flex;
@@ -18,7 +23,6 @@
 	text-align: center;
 	align-self: center;
 	flex-direction: row;
-	font-family:;
 	margin-top: 5%;
 	width: 100%;
 	padding:20px;
@@ -38,6 +42,7 @@
 
 }
 
+/*column boxes*/
 .work .place{
 	background:#bbbbbb;
 	margin: 5px;
@@ -49,6 +54,9 @@
 	color: green;
 	position: relative;
 }
+
+
+/*column boxes contents*/
 
 .work .place h3{
 	font-family: cursive;
@@ -79,4 +87,47 @@
 	column-rule-width: 2px;
 	column-rule-color: lightblue;
 	column-rule-height: 20px;
+}
+
+/*Responsive page*/
+
+@media(max-width:800px)
+{
+	.column
+	{
+box-shadow:2px 0px 15px 0px rgba(50,50,50,0.87);
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	align-self: center;
+	flex-direction: row;
+	margin-top: 5%;
+	width: 100%;
+	padding:20px;
+	font-size: 1.1em;
+	background-color: grey;
+	border:2px lightblue solid;
+	margin-bottom: 5%;
+	}
+
+.work{
+	display: flex;
+	justify-content: center;
+	width: auto;
+	text-align: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+
+.work .place{
+	background:#bbbbbb;
+	margin: 5px;
+	margin-bottom: 50px;
+	width: 300px;
+	height: 700px;
+	padding: 20px;
+	line-height: 25px;
+	color: green;
+	position: relative;
 }
