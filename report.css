@@ -5,7 +5,7 @@
 	display: grid;
 	height: auto;
 	grid-template-columns: 0.2fr 10fr;
-	grid-template-rows: 0.2gr 1.5fr;
+	grid-template-rows:  1.5fr;
 	grid-template-areas:"sidebar content1";
 	grid-gap: 0.2rem;
 	font-weight: 800;

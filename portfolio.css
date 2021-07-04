@@ -2,6 +2,7 @@
 .wrapper{
 	margin-top:30px; 
 }
+
 /*main heading */
 .wrapper h1{
 	text-transform: uppercase;
@@ -10,7 +11,6 @@
 	margin-bottom:60px;
 	text-align: center; 
 	height: 0%;
-	width: 20;
 	color: green;
 	-webkit-text-stroke: 0.3vw black;
 }
@@ -86,7 +86,6 @@
 	column-rule-style: solid;
 	column-rule-width: 2px;
 	column-rule-color: lightblue;
-	column-rule-height: 20px;
 }
 
 /*Responsive page*/
@@ -130,4 +129,5 @@ box-shadow:2px 0px 15px 0px rgba(50,50,50,0.87);
 	line-height: 25px;
 	color: green;
 	position: relative;
+}
 }

@@ -23,7 +23,6 @@
 	background: black;
 	display: flex;
 	justify-content: space-between;
-	align-items: left;
 }
 
 .form-start, .formbox
@@ -31,7 +30,6 @@
 	width: 50%;
 	display: flex;
 	justify-content: left;
-	align-items: left;
 }
 
 .form-start, .formbox form
@@ -183,4 +181,4 @@ margin-bottom: 40px;
  	margin-bottom: 15px;
  	width:100%;
  }
-
+}

@@ -37,7 +37,6 @@ nav .mainMenu a{
 	font-family: cursive;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-weight: 1000;
 	color: black;
 	font-size: 19px;
 
@@ -119,7 +118,6 @@ color:white;
 .col-1 h3{
 font-family: Brush Script MT;
 font-size: 30px;
-color: linear-gradient(grey,white);
 font-weight: 100;
 margin: 0px 0 0px;
 color: white;
@@ -198,7 +196,7 @@ a{
 .color-box{
 	position: absolute;
 	right: 0;
-	top: 10;
+	top: 20px;
 	background: linear-gradient(green,red,yellow);
 	border-radius:40px 0 0 40px;
 	height: 120%;
@@ -294,11 +292,11 @@ nav .openMenu:hover{
 	}
 
 	.col-1 h2{
-		flex-size: 35px;
+		
 	}
 
 	.col-1 h3{
-		flex-size: 15px;
+		
 		color: black;
 	}
 
@@ -308,14 +306,13 @@ nav .openMenu:hover{
 
 	.footer{
 	width: 100%;
-	flex: inline;
 	}
+
 	.social-links 
 	{
 		width: 100%;
 		background: grey;
 		position: relative;
-		flex-size:10px;
 	}	
 
 	.social-links h4{

@@ -31,7 +31,6 @@
 	font-size: 1.2em;
 	width: 40em;
 	padding: 3em;
-	font-family: ;
 
 }
 
@@ -40,7 +39,6 @@
 	font-family: times new roman;
 	font-size: 1.2em;
 	font-weight: lighter;
-	margin-top: ;
 	color: black;
 }
 
@@ -71,13 +69,11 @@
 	text-align: center;
 	align-self: center;
 	flex-direction: row;
-	font-family:;
 	margin-top: 5%;
 	width: 100%;
 	padding:20px;
 	font-size: 1.1em;
 	background-color: grey;
-	font-family: ;
 	border:2px lightblue solid;
 	margin-bottom: 5%;
 }
@@ -172,5 +168,5 @@
 flex-direction: row;
 padding: 1px;
 
-	
+}
 }
