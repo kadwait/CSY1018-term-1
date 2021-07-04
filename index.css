@@ -82,7 +82,7 @@ nav .logo{
 
 /*main body contents*/
 .container{
-	background-image: url(photos/background-image.jpg);
+	background-image: url(photos/profile.jpg);
 	background-size: cover;
 	background-position:center;
 	width: 100%;
